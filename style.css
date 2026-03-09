@@ -1,0 +1,253 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e0e6ff, #f3f4ff);
+  overflow-x: hidden;
+}
+
+/* ================= TOP BAR ================= */
+
+.top-bar {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+
+.menu {
+  position: absolute;
+  left: 30px;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu:hover {
+  transform: scale(1.2);
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  color: white;
+  letter-spacing: 4px;
+}
+
+/* ================= HERO SECTION ================= */
+
+.hero {
+  height: 100vh;
+  background: url("hero.png") center/cover no-repeat;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom right, rgba(0,0,0,0.7), rgba(0,0,0,0.4));
+}
+
+.hero-content {
+  position: relative;
+  top: 35%;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  animation: fadeUp 1.5s ease;
+}
+
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 70px;
+  letter-spacing: 6px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+/* BOOK BUTTON */
+.book-btn {
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(45deg, #0a1f44, #1f3c88);
+  color: white;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.book-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+}
+
+/* ================= DESTINATIONS ================= */
+
+.destinations {
+  padding: 80px 8%;
+}
+
+.destinations h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 60px;
+  font-family: 'Playfair Display', serif;
+  color: #0a1f44;
+}
+
+.place-card {
+  display: flex;
+  background: white;
+  margin-bottom: 30px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: all 0.4s ease;
+}
+
+.place-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 35px rgba(0,0,0,0.2);
+}
+
+.place-card img {
+  width: 220px;
+  height: 200px;
+  object-fit: cover;
+  transition: 0.4s ease;
+}
+
+.place-card:hover img {
+  transform: scale(1.1);
+}
+
+.place-text {
+  padding: 25px;
+}
+
+.place-text h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #0a1f44;
+}
+
+.place-text p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* LEARN MORE BUTTON */
+.learn-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #1f3c88, #0a1f44);
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.learn-btn:hover {
+  transform: scale(1.08);
+}
+
+/* ================= BOOKING PAGE ================= */
+
+.book-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1f3c88, #0a1f44);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  color: white;
+}
+
+.booking-form {
+  background: white;
+  color: #333;
+  width: 400px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+  animation: fadeUp 1s ease;
+}
+
+.booking-form label {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 18px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+  border-color: #1f3c88;
+  box-shadow: 0 0 8px rgba(31,60,136,0.3);
+  outline: none;
+}
+
+/* CONFIRM BUTTON */
+.confirm-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(45deg, #0a1f44, #1f3c88);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.4s;
+}
+
+.confirm-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* ================= ANIMATIONS ================= */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
